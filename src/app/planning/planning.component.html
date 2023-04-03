@@ -1,0 +1,24 @@
+
+<!-- Toolbar -->
+<mat-toolbar class="toolbar center-content">
+    <span>Planning</span>
+    <div>
+        <button *ngIf="(authService.authState$ | async)?.isAuthenticated" (click)="oktaAuth.signOut()">Logout</button>
+      </div>
+</mat-toolbar>
+<!-- Two Buttons -->
+
+<mat-card class="margin-card" (click)="inGateClick()">
+    <mat-card-content class="card-content">
+        <img src="assets/ingate.png">
+        <p class="text-content">In Gate</p>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="margin-card" (click)="outGateClick()">
+    <mat-card-content class="card-content">
+        <img src="assets/outgate.png">
+        <p class="text-content">Out Gate</p>
+    </mat-card-content>
+</mat-card>
+
