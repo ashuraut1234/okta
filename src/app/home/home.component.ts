@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.authService.authState$.subscribe(x=>{
       if(x.isAuthenticated){
-       this.router.navigate(['planning']);
+       //this.router.navigate(['planning']);
+       this.oktaAuth.signInWithRedirect()
       }
     })
   }
