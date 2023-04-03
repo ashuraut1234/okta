@@ -16,8 +16,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 
 const oktaConfig = {
-  issuer: 'https://dev-69351085.okta.com/oauth2/default',
-  clientId: '0oa8jwsj0csQcTaye5d7',
+  issuer: 'https://dev-44583738.okta.com/oauth2/default',
+  clientId: '0oa8c95q4147zZjTf5d7',
   redirectUri: '/login/callback',
   scopes: ['openid', 'profile']
 };
