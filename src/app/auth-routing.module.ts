@@ -18,7 +18,7 @@ import {MatIconModule} from '@angular/material/icon';
 const oktaConfig = {
   issuer: 'https://dev-69351085.okta.com/oauth2/default',
   clientId: '0oa8jwsj0csQcTaye5d7',
-  redirectUri: '/planning',
+  redirectUri: '/login/callback',
   scopes: ['openid', 'profile']
 };
 
